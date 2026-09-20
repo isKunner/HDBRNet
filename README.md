@@ -45,6 +45,30 @@ The examples below compare Bicubic interpolation and three DEM super-resolution 
   <em>Representative dam-structure reconstruction results on the U.S. test data. Values in parentheses denote elevation RMSE (m).</em>
 </p>
 
+## Example data
+
+Several example samples are provided in `example_data/` for testing and inspecting HDBRNet results.
+
+```text
+example_data/
+├── lq/
+├── coplq/
+├── ref/
+├── rs/
+├── gt/
+└── hdbrnet/
+```
+
+The directories contain:
+
+- **`lq/`**: controlled low-resolution DEMs generated from the GT DEMs using mean downsampling.
+- **`coplq/`**: low-resolution DEMs obtained from the Copernicus DEM product, representing real-world coarse DEM inputs.
+- **`ref/`**: Depth-Ref inputs used by HDBRNet.
+- **`rs/`**: RGB remote sensing image inputs.
+- **`gt/`**: high-resolution ground-truth DEMs provided for visual comparison and evaluation; GT is not required for inference.
+- **`hdbrnet/`**: super-resolved DEM results reconstructed by HDBRNet.
+
+Files with the same sample ID correspond to the same geographic sample. For example, `505677.tif` in the different subdirectories refers to the same sample.
 
 ## Software
 
