@@ -58,8 +58,8 @@ Prebuilt Windows x64 packages are available from the [GitHub Releases](../../rel
 
 | Release | Package | Description |
 |---|---|---|
-| Windows CPU | `HDBRNet-v1.0-windows-x64-cpu.zip` | CPU inference version for Windows x64 systems; no NVIDIA GPU is required |
-| Windows GPU | `HDBRNet-v1.0-windows-x64-gpu.zip` | CUDA-accelerated version for Windows x64 systems with a compatible NVIDIA GPU and driver |
+| Windows CPU | [HDBRNet-v1.0-windows-x64-cpu.zip](https://github.com/isKunner/HDBRNet/releases/download/v1.0/HDBRNet-v1.0-windows-x64-cpu.zip) | CPU inference version for Windows x64 systems; no NVIDIA GPU is required |
+| Windows GPU | [HDBRNet-v1.0-windows-x64-gpu.zip](https://github.com/isKunner/HDBRNet/releases/download/v1.0/HDBRNet-v1.0-windows-x64-gpu.zip) | CUDA-accelerated version for Windows x64 systems with a compatible NVIDIA GPU and driver |
 
 The CPU package is approximately **170 MB** after compression, while the GPU package is approximately **1.71 GB** because the required CUDA and cuDNN runtime libraries are bundled with the application. Both packages are portable: download the appropriate ZIP archive, extract the complete directory, and run `HDBRNet.exe`. The extracted directory structure should be retained because the executable loads the model and runtime components from relative paths.
 
